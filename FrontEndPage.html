@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        html,
+        body {
+            height:100px;
+            width:100%;
+            /* overflow: hidden; */
+            margin: 0;
+
+        }
+
+        .nav-details {
+            display: flex;
+            height: 100px;
+            width: 100%;
+            /* background-color: lightseagreen; */
+            justify-content: space-between;
+            align-items: center;
+            /* position:relative;
+            top:100%; */
+
+            border-bottom: 0.1vw solid #b2aeae;
+        }
+
+        .nav-content {
+            display: flex;
+            gap: 2vw;
+            padding: 0 4vw;
+
+
+        }
+
+        h4 {
+            color: lightseagreen;
+            font-size: 1.4vw;
+
+
+        }
+        /* .nav-details button{
+            font-size: 1.4vw;
+            background-color: rgb(24, 26, 26);
+            padding:0.2vw 2.4vw;
+            border-radius: 0.3vw;
+            color: #fff;
+        } */
+
+        .nav-details i {
+            font-weight: 700;
+            font-size: 2vw;
+            color: lightseagreen;
+            display: none;
+        }
+
+        .nav-details h2 {
+            padding: 0 4vw;
+            font-size: 2vw;
+        }
+
+        .section2 {
+            display: flex;
+            /* background-color: blue; */
+            width: 100%;
+            height: calc(100% - 100px);
+            flex-direction: column;
+        }
+
+        .left {
+            /* background-color: red; */
+            width: 55%;
+            height: calc(100% - 100px);
+            padding: 2vw 5vw;
+        }
+
+        .left h1 {
+            font-size: 4vw;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+
+        .left span {
+            color: lightseagreen;
+        }
+
+        .left p {
+            font-size: 1.5vw;
+            font-weight: 600;
+            width: 80%;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom:3vw;
+            margin-top:2vw;
+
+        }
+
+        .left button {
+            font-size: 2vw;
+            background-color: lightseagreen;
+            padding: 1vw 2vw;
+            border-radius: 0.3vw;
+            color: #fff;
+        }
+
+        .right {
+            height: 100%;
+            width: 45%;
+        }
+
+        .right img {
+            height: 100%;
+
+        }
+
+
+        @media(max-width:1200px) {
+            .nav-content h4 {
+                font-size: 2vw;
+            }
+
+            .nav-details h2 {
+                font-size: 4vw;
+            }
+
+            .nav-details {
+                height: 60px;
+                width: 100%;
+            }
+        }
+
+        @media(max-width:900px) {
+            .nav-content h4 {
+                font-size: 2.4vw;
+            }
+
+            /* .nav-details i{
+                display:block;
+                padding: 0 5vw;
+                font-size:5vw;
+            } */
+            .nav-details h2 {
+                font-size: 5vw;
+            }
+
+            .nav-details {
+                height: 60px;
+                width: 100%;
+            }
+
+        }
+
+        @media(max-width:650px) {
+            .nav-content h4 {
+                font-size: 3vw;
+            }
+
+            .nav-details h2 {
+                font-size: 4vw;
+            }
+
+            .nav-details {
+                height: 40px;
+                width: 100%;
+            }
+
+        }
+
+        @media(max-width:600px) {
+            .nav-content h4 {
+                display: none;
+            }
+
+            .nav-details i {
+                display: block;
+                font-weight: 700;
+                font-size: 7vw;
+            }
+
+            .nav-details h2 {
+                font-size: 5vw;
+            }
+            .section2{
+                flex-direction: column;
+
+            }
+            .left{
+                /* justify-content: center;
+                align-items: center; */
+                width:99%;
+                height: 60%;
+            }
+            .left h1{
+                font-size:4.5vw;
+            }
+            .left p{
+                font: size 2.8vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="nav-details">
+            <h2>Logo</h2>
+            <div class="nav-content">
+                <h4>Alumni Stories</h4>
+                <h4>Courses</h4>
+                <h4>Prices</h4>
+                <h4>Instructors</h4>
+                <h4>Contact</h4>
+                <!-- <button>Sign In</button> -->
+            </div>
+            <i class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="left">
+            <h1>Learn to code from the <span>coolest</span> developers in Pakistan.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus est exercitationem voluptatum eius,
+                aut magnam nisi ipsam! Obcaecati, aperiam enim?</p>
+            <button>Explore Now</button>
+        </div>
+        <div class="right">
+            <!-- <img src="images/3426526.jpg"> -->
+        </div>
+    </div>
+
+</body>
+
+</html>
